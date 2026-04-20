@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayıncı Simülatörü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎥 Yayıncı Olma Simülatörü</h1>
+
+    <div class="card">
+        <p>👤 Takipçi: <span id="followers">0</span></p>
+        <p>💰 Para: <span id="money">0</span>₺</p>
+        <p>🔥 Popülerlik: <span id="popularity">1</span></p>
+    </div>
+
+    <div class="card">
+        <h3>Yayın Yap</h3>
+        <button onclick="stream()">Canlı Yayın Aç</button>
+        <div class="progress">
+            <div id="progressBar" class="bar"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Yükseltmeler</h3>
+        <button onclick="upgradeMic()">🎤 Mikrofon (+Takipçi) - 100₺</button>
+        <button onclick="upgradePC()">💻 PC (+Para) - 200₺</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
